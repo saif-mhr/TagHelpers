@@ -1,0 +1,11 @@
+﻿@{ 
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<a href="Home/About">About 1</a> <br />
+@Html.ActionLink("About 2","About","Home")
+<br />
+<a href="@Url.Action("About","Home")">About 3</a>
+<br />
+<a asp-controller="Home" asp-action="About">About (asp.net core mvc tag helper)</a>

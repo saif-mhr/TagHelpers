@@ -1,0 +1,8 @@
+﻿<h1>About</h1>
+<a href="Home/Index">About 1</a>
+<br />
+@Html.ActionLink("About 2", "Index", "Home")
+<br />
+<a href="@Url.Action("Index","Home")">About 3</a>
+<br />
+<a asp-controller="Home" asp-action="Index">About (asp.net core mvc tag helper)</a>
